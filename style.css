@@ -66,3 +66,27 @@ header {
 /* 
  * YOUR CSS:
  */
+
+#about {
+  background-color: rgba(241,241,241,255);
+}
+#aboutdescription {
+  display:flex;
+}
+
+#paragraph1 {
+  flex-grow: 3;
+}
+#aboutmockup {
+  flex-grow: 2;
+  align-self: flex-end;
+}
+
+#staff div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.staff-profile {
+  flex: 0 0 33%;
+}
