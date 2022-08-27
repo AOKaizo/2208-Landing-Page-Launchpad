@@ -26,7 +26,10 @@ h2 {
   font-weight: normal;
 }
 
-h1, h2, h3, nav {
+h1,
+h2,
+h3,
+nav {
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
@@ -67,26 +70,47 @@ header {
  * YOUR CSS:
  */
 
-#about {
-  background-color: rgba(241,241,241,255);
-}
-#aboutdescription {
-  display:flex;
+ #about {
+  background-color: rgba(241, 241, 241, 255);
+ }
+
+#aboutDescription {
+  display: flex;
 }
 
-#paragraph1 {
-  flex-grow: 3;
+#aboutParagraph {
+  flex: 3;
+  font-size: larger;
+  margin-left: 20px;
 }
-#aboutmockup {
-  flex-grow: 2;
+
+
+#phoneImage {
+  flex: 2;
   align-self: flex-end;
 }
 
-#staff div {
+.staffProfiles {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .staff-profile {
   flex: 0 0 33%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.headshot {
+  font-size: xx-large;
+}
+
+.staff-name {
+  font-size: xx-large;
+}
+
+.staff-bio {
+  font-style: italic;
 }
