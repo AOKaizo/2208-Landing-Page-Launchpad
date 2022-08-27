@@ -70,9 +70,9 @@ header {
  * YOUR CSS:
  */
 
- #about {
+#about {
   background-color: rgba(241, 241, 241, 255);
- }
+}
 
 #aboutDescription {
   display: flex;
@@ -84,23 +84,25 @@ header {
   margin-left: 20px;
 }
 
-
 #phoneImage {
   flex: 2;
   align-self: flex-end;
 }
 
 .staffProfiles {
-  display: flex;
-  flex-wrap: wrap;
-
+display: flex;
+flex-wrap: wrap;
+place-content: center;
 }
 
 .staff-profile {
-  flex: 0 0 33%;
+  flex: 0 0 30%;
 
   display: flex;
   flex-direction: column;
+  place-items: center;
+  padding: 1em;
+  column-gap: normal;
 }
 
 .headshot {
@@ -113,4 +115,61 @@ header {
 
 .staff-bio {
   font-style: italic;
+  
+}
+
+.navBar {
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  left: 5em;
+  right: 5em;
+  opacity: 99%;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  height: 50px;
+  display: flex;
+  column-gap: 50%;
+}
+
+#logo {
+  flex: 0 0 33%;
+  max-width: fit-content;
+  height: auto;
+  margin-left: 1em;
+}
+#navButtons {
+  flex: 0 0 33%;
+  display: flex;
+}
+
+.nav-item {
+  flex: 0 0  33%;
+  place-self: center;
+  font-size: xx-large;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  color: lightgray;
+}
+
+#carousel {
+}
+
+#carousel-text {
+  z-index: 3;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+#carousel-text>h1 {
+  font-size: 75px;
 }
